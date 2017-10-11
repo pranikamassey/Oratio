@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +54,13 @@ public class CaterersList extends Fragment {
                 {
                     CatrersListItems listItems = child.getValue(CatrersListItems.class);
                     mCatrersList.add(listItems);
+
+                    if (listItems != null) {
+                        Log.e("show_items_name",""+listItems.catrers_name);
+                    }
+
                 }
+
                 mAdapter.notifyDataSetChanged();
             }
             @Override

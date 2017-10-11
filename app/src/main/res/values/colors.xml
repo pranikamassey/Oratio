@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#7c4dff</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#5b5b5b</color>
+    <color name="colorPrimaryDark">#3d3c3c</color>
+    <color name="colorAccent">#5b5b5b</color>
+    <color name="cardTextColor">#3d3c3c</color>
+    <color name="kp_red">#3d3c3c</color>
+    <color name="kp_blue">#FF6D00</color>
+    <color name="cardBackground">#FFFFFF</color>
+
 </resources>

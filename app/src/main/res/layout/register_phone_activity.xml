@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.darklightning.partycatrers.StartHere.FirstTimeActivity">
+    tools:context="com.darklightning.partycatrers.Authentication.RegisterUserFolder.RegisterPhoneActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/replae_container">
+
+    </FrameLayout>
 </android.support.constraint.ConstraintLayout>

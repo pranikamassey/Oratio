@@ -5,87 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.darklightning.partycatrers.StartHere.RegisterUserActivity">
+    tools:context="com.darklightning.partycatrers.Authentication.RegisterUserFolder.RegisterUserActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="15dp"
-        android:orientation="vertical">
+        android:paddingTop="100dp">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="EmailID"
-            android:id="@+id/email_id"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:id="@+id/user_password"
-            android:inputType="textPassword"
-            android:hint="password"/>
-
-        <EditText
-            android:id="@+id/phone_number_edittext"
-            android:layout_width="match_parent"
-            android:hint="enter Phone no........."
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:ems="10"
-            android:inputType="phone" />
-
-        <Button
-            android:id="@+id/send_otp"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:text="     Send OTP    " />
-
-        <Button
-            android:id="@+id/resend_otp"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="       resend otp     " />
+            android:orientation="vertical"
+            android:layout_gravity="right">
 
-        <EditText
-            android:id="@+id/otp_edittext"
+            <custom_font.MyTextView
+                android:id="@+id/sign_in_instead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signin"
+                android:textSize="16dp"
+                android:layout_gravity="right"
+                android:gravity="end"
+                android:textColor="#2C3646"
+                />
+            <LinearLayout
+                android:layout_width="39dp"
+                android:layout_height="1.5dp"
+                android:background="#2C3646"
+                android:layout_gravity="end"
+                android:layout_marginTop="2dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="enter OTP........"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_signup_container">
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="60dp">
+                <custom_font.MyTextView
 
-        <Button
-            android:id="@+id/register_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="       Register     " />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/login_button"
-            android:text="login Instead"/>
-      <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal">
-          <com.google.android.gms.common.SignInButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:id="@+id/google_signin_button">
-          </com.google.android.gms.common.SignInButton>
-          <Button
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:id="@+id/google_signout"
-              android:text="sign out"
-              />
-      </LinearLayout>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or  "
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#2C3646"
+                    />
+                <custom_font.MyTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Signup With  "
+                    android:textSize="16dp"
+                    android:layout_gravity="left"
+                    android:textColor="#2C3646"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="50dp">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/google_signip_container"
+                    android:layout_margin="10dp"
+                    >
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/facebook_signup_container"
+                    android:layout_margin="10dp">
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/twitter_signup_container"
+                    android:layout_margin="10dp">
+                </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
 
     </LinearLayout>
 
